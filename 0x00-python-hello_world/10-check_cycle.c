@@ -16,16 +16,16 @@ int check_cycle(listint_t *list)
 	while ((temp && fast_temp) && fast_temp->next)
 	{
 		temp = temp->next;
+		if (temp->next == list)
+		{
+			result = 1;
+			break;
+		}
 		if (fast_temp->next || fast_temp->next->next)
 			fast_temp = fast_temp->next;
 		else
 			break;
 		if (temp == fast_temp)
-		{
-			result = 1;
-			break;
-		}
-		if (temp == list)
 		{
 			result = 1;
 			break;
