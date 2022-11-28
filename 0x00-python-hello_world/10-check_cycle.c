@@ -25,6 +25,11 @@ int check_cycle(listint_t *list)
 			result = 1;
 			break;
 		}
+		if (temp == list)
+		{
+			result = 1;
+			break;
+		}
 	}
 	return (result);
 }
