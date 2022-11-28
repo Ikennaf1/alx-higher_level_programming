@@ -10,9 +10,6 @@ int check_cycle(listint_t *list)
 	int result = 0;
 	listint_t *temp = list, *fast_temp = list;
 
-	if (list == NULL)
-		return (0);
-
 	while ((temp && fast_temp) && fast_temp->next)
 	{
 		temp = temp->next;
@@ -22,7 +19,7 @@ int check_cycle(listint_t *list)
 			break;
 		}
 		if (fast_temp->next || fast_temp->next->next)
-			fast_temp = fast_temp->next;
+			fast_temp = fast_temp->next->next;
 		else
 			break;
 		if (temp == fast_temp)
