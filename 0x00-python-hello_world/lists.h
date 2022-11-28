@@ -18,6 +18,6 @@ typedef struct listint_s
 } listint_t;
 
 int check_cycle(listint_t *list);
-int _putchar(char s);
+int _putchar(char c);
 
 #endif /* _LISTS_ */
