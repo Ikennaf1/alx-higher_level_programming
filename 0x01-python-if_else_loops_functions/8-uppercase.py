@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-def uppercase(s):
-    endline = ""
-    if s == "":
-        s = ""
-    for i in range(0, len(s)):
-        endline = "" if i < len(s) - 1 else "\n"
-        if ord(s[i]) >= 97 and ord(s[i]) <= 122:
-            for j in range(97, 123):
-                if j == ord(s[i]):
-                    print("{:c}".format(j - 32), end=endline)
-                    break
-        else:
-            print("{}".format(s[i]), end="" if i < len(s) - 1 else "\n")
+def uppercase(str):
+    new_str = ""
+    for i in range(len(str)):
+        if (ord(str[i]) >= 97 and ord(str[i]) <= 122):
+            new_str += chr(ord(str[i]) - 32)
+            continue
+        new_str += str[i]
+
+    print('{0}'.format(new_str))
