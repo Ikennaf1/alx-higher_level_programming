@@ -2,7 +2,7 @@
 def uppercase(s):
     endline = ""
     if s == "":
-        s = "\0"
+        s = ""
     for i in range(0, len(s)):
         endline = "" if i < len(s) - 1 else "\n"
         if ord(s[i]) >= 97 and ord(s[i]) <= 122:
