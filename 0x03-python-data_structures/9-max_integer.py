@@ -9,5 +9,3 @@ def max_integer(my_list=[]):
         if maxnum < my_list[i]:
             maxnum = my_list[i]
     return maxnum
-maxint = max_integer([])
-print(maxint)
