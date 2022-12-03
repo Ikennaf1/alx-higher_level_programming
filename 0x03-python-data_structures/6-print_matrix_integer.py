@@ -2,7 +2,7 @@
 
 def print_matrix_integer(matrix=[[]]):
     endline = ""
-    if len(matrix) > 0:
+    if matrix:
         for i in range(0, len(matrix)):
             for j in range(0, len(matrix[i])):
                 endline = " " if j != len(matrix[i]) - 1 else "\n"
