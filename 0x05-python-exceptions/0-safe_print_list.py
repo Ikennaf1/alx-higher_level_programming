@@ -1,13 +1,17 @@
 #!/usr/bin/python3
 
+
 def safe_print_list(my_list=[], x=0):
-    endline = ""
+    idx = 0
+
     try:
-        for i in range(0, x):
-            endline = "" if i < (x - 1) else "\n"
-            print("{}".format(my_list[i]), end=endline)
-    except (TypeError, IndexError):
+        for i in my_list:
+            if idx < x:
+                print('{}'.format(my_list[idx]), end='')
+                idx += 1
+
         print()
-        return i
-    i += 1
-    return i
+    except TypeError:
+        pass
+    finally:
+        return idx
