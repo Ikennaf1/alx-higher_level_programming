@@ -6,6 +6,7 @@ A square class that returns area
 
 """
 
+
 class Square:
     """__init__
 
