@@ -34,7 +34,12 @@ class Square:
 
     @property
     def size(self):
-        """size
+        """:obj: `size` does some things
+
+        Raises:
+            TypeError: if `size` is not `int`
+
+            ValueError: if `size` is negative
 
         Returns:
             int: the size of square
