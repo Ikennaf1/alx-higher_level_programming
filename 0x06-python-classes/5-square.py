@@ -4,6 +4,16 @@ class Square:
     """ Square class with more oomph """
 
     def __init__(self, size=0):
+        """__init__ Initializes things
+
+        Args:
+            size: (:obj: `int`, optional)
+
+        Raises:
+            TypeError: If type is not `int`
+
+            ValueError: If size is negative
+        """
         if type(size) is not int:
             raise TypeError("size must be an integer")
         if size < 0:
@@ -12,6 +22,16 @@ class Square:
 
     @property
     def size(self):
+        """size Gets the size of the square
+
+        Args:
+            size: (:obj: `int`, optional)
+
+        Raises:
+            TypeError: If size is not an `int`
+
+            ValueError: If size is negative
+        """
         return self.__size
 
     @size.setter
@@ -25,8 +45,8 @@ class Square:
     def area(self):
         """area returns the square area
 
-            Returns:
-                int: The calculated area
+        Returns:
+            int: The calculated area
         """
         return self._size ** 2
 
