@@ -34,10 +34,28 @@ class Square:
 
     @property
     def size(self):
+        """size
+
+        Returns the size of square
+
+        """
         return self.__size
 
     @size.setter
     def size(self, size):
+        """size
+
+        Sets the size of square
+
+        Attributes:
+            size (:obj: `int`, optional): Size of the square
+
+        Raises:
+            TypeError: If `size` type is not `int`.
+
+            ValueError: if `size` is negative
+
+        """
         if type(size) is not int:
             raise TypeError('size must be an integer')
 
@@ -47,7 +65,9 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Returns the current square area
+        """area
+
+        Returns the current square area
 
         """
         return self.__size ** 2
