@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+
+"""
+
+Square now checks cordinates
+
+"""
+
+
 class Square:
     """Square Class
 
@@ -38,24 +46,23 @@ class Square:
 
     @property
     def size(self):
+        """
+
+        Returns square size
+
+        Raises:
+            TypeError: If size is not an `int`
+
+            ValueError: If size is negative
+
+        Returns:
+            int: Size of square
+
+        """
         return self.__size
 
     @size.setter
     def size(self, size):
-        """__init__
-
-        The size setter method update the size value of the square.
-
-        Attributes:
-            size (:obj:`int`): The new size of the square.
-
-        Raises:
-            TypeError: If `size` type is not `int`.
-
-            ValueError: If `size` is less than `0`.
-
-        """
-
         if type(size) is not int:
             raise TypeError('size must be an integer')
 
@@ -66,6 +73,17 @@ class Square:
 
     @property
     def position(self):
+        """
+
+        Returns position in square
+
+        Raises:
+            TypeError: if any positions negative
+
+        Returns:
+            int: position
+
+        """
         return self.__position
 
     @position.setter
@@ -79,12 +97,34 @@ class Square:
         self.__position = position
 
     def __check_tuple(self, position):
+        """
+
+        Checks position type
+
+        Args:
+            position: `int`
+
+        Returns:
+            bool: `true` if not tuple
+
+        """
         if type(position) is tuple:
             return True
 
         return False
 
     def __check_indexes(self, position):
+        """
+
+        checks index of position
+
+        Args:
+            position:`int`
+
+        Returns:
+            bool: `True` if positive
+
+        """
         if len(position) == 2:
             return True
 
@@ -97,18 +137,36 @@ class Square:
         return False
 
     def __check_values(self, position):
+        """
+
+        Checks given values
+
+        Args:
+            position: `int`
+
+        Returns:
+            bool: `True` if positive
+
+        """
         if position[0] >= 0 and position[1] >= 0:
             return True
 
         return False
 
     def area(self):
-        """Returns the current square area
+        """
+
+        Returns the current square area
 
         """
         return self.__size ** 2
 
     def my_print(self):
+        """
+
+        Prints the visual data of the square
+
+        """
         if self.__size == 0:
             print()
             return None
