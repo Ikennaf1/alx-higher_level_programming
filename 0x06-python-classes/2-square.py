@@ -18,6 +18,11 @@ class Square:
         Attributes:
             size (int): The size of the square.
 
+        Raises:
+            TypeError: If size `type` is not `int`
+
+            ValueError: If `size` is negative
+
         """
         if type(size) is not int:
             raise TypeError("size must be an integer")
