@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
+"""
+
+Same Square class breathing hot coal
+
+"""
+
+
 class Square:
     """ Square class with more oomph """
 
