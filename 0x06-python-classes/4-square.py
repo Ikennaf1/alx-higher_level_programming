@@ -14,8 +14,8 @@ class Square:
 
         The __init__ method initializes the size value of the square.
 
-        Attributes:
-            size (:obj:`int`, optional): The size of the square.
+        Args:
+            size (:obj: `int`, optional): The size of the square.
 
         Raises:
             TypeError: If `size` type is not `int`.
@@ -36,7 +36,8 @@ class Square:
     def size(self):
         """size
 
-        Returns the size of square
+        Returns:
+            int: the size of square
 
         """
         return self.__size
@@ -47,7 +48,7 @@ class Square:
 
         Sets the size of square
 
-        Attributes:
+        Args:
             size (:obj: `int`, optional): Size of the square
 
         Raises:
@@ -67,7 +68,8 @@ class Square:
     def area(self):
         """area
 
-        Returns the current square area
+        Returns:
+            int: The current square area
 
         """
         return self.__size ** 2
