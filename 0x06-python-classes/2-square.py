@@ -7,6 +7,7 @@ A Square Class
 
 
 class Square:
+    """ Same square class with exceptions """
 
     def __init__(self, size=0):
         """__init__ initializes the size
