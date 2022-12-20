@@ -4,7 +4,8 @@ class Square:
     """ Square class with more oomph """
 
     def __init__(self, size=0):
-        """__init__ Initializes things
+        """
+        __init__ Initializes things
 
         Args:
             size: (:obj: `int`, optional)
@@ -22,7 +23,8 @@ class Square:
 
     @property
     def size(self):
-        """size Gets the size of the square
+        """
+        size Gets the size of the square
 
         Args:
             size: (:obj: `int`, optional)
@@ -43,7 +45,8 @@ class Square:
         self.__size = value
 
     def area(self):
-        """area returns the square area
+        """
+        area computes and returns the square area
 
         Returns:
             int: The calculated area
