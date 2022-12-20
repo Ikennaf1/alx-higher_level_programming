@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 class Square:
+    """ Square class with more oomph """
+
     def __init__(self, size=0):
         if type(size) is not int:
             raise TypeError("size must be an integer")
@@ -21,9 +23,15 @@ class Square:
         self.__size = value
 
     def area(self):
+        """area returns the square area
+
+            Returns:
+                int: The calculated area
+        """
         return self._size ** 2
 
     def my_print(self):
+        """my_print Prints a square with the square using # as paint """
         if self.__size == 0:
             print()
         else:
