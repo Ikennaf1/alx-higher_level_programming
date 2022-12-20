@@ -8,6 +8,7 @@ A square class that does a lot more.
 
 
 class Square:
+    """ Same square class with more exceptions and props """
 
     def __init__(self, size=0):
         """__init__ method intiializes the size of square.
@@ -36,7 +37,7 @@ class Square:
     def size(self):
         """:obj: `size` does some things.
 
-        Attributes:
+        Args:
             size (:obj: `int`, optional): The size of the square.
 
         Raises:
