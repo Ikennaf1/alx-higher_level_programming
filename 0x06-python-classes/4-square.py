@@ -2,7 +2,7 @@
 
 """Square Class
 
-A square class that does a lot more
+A square class that does a lot more.
 
 """
 
@@ -10,7 +10,7 @@ A square class that does a lot more
 class Square:
 
     def __init__(self, size=0):
-        """__init__ method intiializes the size of square
+        """__init__ method intiializes the size of square.
 
         The __init__ method initializes the size value of the square.
 
@@ -34,18 +34,18 @@ class Square:
 
     @property
     def size(self):
-        """:obj: `size` does some things
+        """:obj: `size` does some things.
 
         Attributes:
-            size (:obj: `int`, optional): The size of the square
+            size (:obj: `int`, optional): The size of the square.
 
         Raises:
-            TypeError: if `size` is not `int`
+            TypeError: if `size` is not `int`.
 
-            ValueError: if `size` is negative
+            ValueError: if `size` is negative.
 
         Returns:
-            int: the size of square
+            int: the size of square.
 
         """
         return [self.__size]
@@ -64,7 +64,7 @@ class Square:
         """area
 
         Returns:
-            int: The current square area
+            int: The current square area.
 
         """
         return self.__size ** 2
