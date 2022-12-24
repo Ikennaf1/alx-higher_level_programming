@@ -1,0 +1,50 @@
+###
+# Module import
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+# 1 + 2 = 3
+>>> add_integer(1, 2)
+3
+
+
+# 100 - 2 = 98
+>>> add_integer(100, -2)
+98
+
+
+# With no args
+>>> add_integer()
+Traceback (most recent call last):
+	...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+
+# With no assigned value
+>>> add_integer(a, 20)
+Traceback (most recent call last):
+	...
+NameError: name 'a' is not defined
+
+
+# With one args
+>>> add_integer(2)
+100
+
+
+# With one float
+>>> add_integer(100.3, -2)
+98
+
+
+# With two floats
+>>> add_integer(2.3, 3.2)
+5
+
+
+# With a string
+>>> add_integer(4, "School")
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
+
