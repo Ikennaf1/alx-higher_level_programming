@@ -8,6 +8,10 @@ A module for the rectangle class
 
 
 class Rectangle:
+    """
+    A rectangle class that sets width and height
+    """
+
     def __init__(self, width=0, height=0):
         """
         `obj`: width and height of rectangle
