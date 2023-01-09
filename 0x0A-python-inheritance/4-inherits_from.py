@@ -4,6 +4,7 @@ def inherits_from(obj, a_class):
     Checks if object obj inherits from class a_class
 
     Args:
+        obj: The given object
         a_class: The given class
 
     Returns:
