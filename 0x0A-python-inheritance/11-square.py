@@ -26,4 +26,7 @@ class Square(Rectangle):
         self.__size = size
 
     def __str__(self):
+        """
+        String substitution for the class
+        """
         return '[Square] ' + str(self.__size) + '/' + str(self.__size)
