@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Method InheritsFrom
+"""
+
+
 def inherits_from(obj, a_class):
     """
     Checks if object obj inherits from class a_class
