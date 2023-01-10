@@ -19,7 +19,7 @@ def pascal_triangle(n):
     width = x
 
     if n <= 0:
-        return []
+        return all_list
     while n > 0:
         left = 0
         right = 1
