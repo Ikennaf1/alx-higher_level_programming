@@ -144,6 +144,18 @@ class Rectangle(Base):
                 if k in new_attrs:
                     setattr(self, k, v)
 
+    def to_dictionary(self):
+        """
+        Returns dictionary representation of class
+        """
+        return {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
+
     def is_int(self, val, param):
         """
         Checks if supplied value is an integer
